@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduMaster — Unlock your potential with expert-led online courses in Programming, Web Development, AI, Data Science, UI/UX Design, and more.">
+  <title>EduMaster | Online Learning Platform</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =========================================================
+       1. NAVIGATION BAR
+       Pure CSS mobile menu toggle via hidden checkbox
+       ========================================================= -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand" aria-label="EduMaster Home">
+        <img src="assets/icons/edumaster-logo.svg" alt="EduMaster Logo" class="brand-icon" width="38" height="38">
+        <span class="brand-name">Edu<span>Master</span></span>
+      </a>
+
+      <!-- Pure CSS Hamburger Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#courses" class="nav-link">Courses</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#instructors" class="nav-link">Instructors</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#login-modal" class="btn btn-ghost">Login</a>
+          <a href="#signup-modal" class="btn btn-primary">Get Started</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =========================================================
+         2. HERO SECTION
+         ========================================================= -->
+    <section id="home" class="hero-section">
+      <div class="hero-glow hero-glow-blue" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-purple" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-badge">
+            <i class="fa-solid fa-sparkles" aria-hidden="true"></i>
+            Trusted by 10,000+ Ambitious Learners Worldwide
+          </span>
+
+          <h1 class="hero-title">
+            Unlock Your Potential With <span class="gradient-text">Online Learning</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Learn new skills, develop your knowledge and achieve your career goals with
+            expert-led online courses.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#courses" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-compass" aria-hidden="true"></i>
+              <span>Explore Courses</span>
+            </a>
+            <a href="#about" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+              <span>Learn More</span>
+            </a>
+          </div>
+
+          <!-- Student Learning Statistics -->
+          <div class="hero-stats" aria-label="Learning platform highlights">
+            <div class="hero-stat-item">
+              <strong>10,000+</strong>
+              <span>Active Students</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="hero-stat-item">
+              <strong>100+</strong>
+              <span>Expert Courses</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="hero-stat-item">
+              <strong>4.9 / 5</strong>
+              <span>Student Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-illustration-card">
+            <img
+              src="assets/images/hero-learning.png"
+              alt="EduMaster online classroom illustration showing video lessons, course curriculum, and progress ring"
+              width="600"
+              height="450"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. COURSE CATEGORIES SECTION (8 Categories)
+         ========================================================= -->
+    <section id="categories" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Top Categories</span>
+          <h2 class="section-title">Explore In-Demand Career Fields</h2>
+          <p class="section-subtitle">
+            Browse curated learning tracks designed by industry professionals for college students and career builders.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <a href="#courses" class="card category-card">
+            <div class="cat-icon icon-blue"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <h3>Programming</h3>
+            <span class="course-count">24 Courses</span>
+          </a>
+
+          <a href="#courses" class="card category-card">
+            <div class="cat-icon icon-purple"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+            <h3>Web Development</h3>
+            <span class="course-count">18 Courses</span>
+          </a>
+
+          <a href="#courses" class="card category-card">
+            <div class="cat-icon icon-indigo"><i class="fa-solid fa-brain" aria-hidden="true"></i></div>
+            <h3>Artificial Intelligence</h3>
+            <span class="course-count">14 Courses</span>
+          </a>
+
+          <a href="#courses" class="card category-card">
+            <div class="cat-icon icon-cyan"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div>
+            <h3>Data Science</h3>
+            <span class="course-count">16 Courses</span>
+          </a>
+
+          <a href="#courses" class="card category-card">
+            <div class="cat-icon icon-pink"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></div>
+            <h3>Graphic Design</h3>
+            <span class="course-count">12 Courses</span>
+          </a>
+
+          <a href="#courses" class="card category-card">
+            <div class="cat-icon icon-amber"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
+            <h3>Business</h3>
+            <span class="course-count">15 Courses</span>
+          </a>
+
+          <a href="#courses" class="card category-card">
+            <div class="cat-icon icon-emerald"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <h3>Cyber Security</h3>
+            <span class="course-count">10 Courses</span>
+          </a>
+
+          <a href="#courses" class="card category-card">
+            <div class="cat-icon icon-rose"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+            <h3>Digital Marketing</h3>
+            <span class="course-count">11 Courses</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. FEATURED COURSES SECTION (8 Complete Courses)
+         ========================================================= -->
+    <section id="courses" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Courses</span>
+          <h2 class="section-title">Popular Courses Built for Real Results</h2>
+          <p class="section-subtitle">
+            Step-by-step video lessons, real-world assignments, and verified certificates upon completion.
+          </p>
+        </div>
+
+        <div class="courses-grid">
+          <!-- Course 1 -->
+          <article class="card course-card">
+            <div class="course-thumb">
+              <img src="assets/images/course-python.png" alt="Python Programming course banner" width="480" height="300">
+              <span class="level-badge level-beginner">Beginner</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta-top">
+                <span class="rating"><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9</span>
+                <span class="students"><i class="fa-solid fa-user-group" aria-hidden="true"></i> 2,450 Students</span>
+              </div>
+              <h3 class="course-title">Python Programming</h3>
+              <p class="course-instructor">By Vikram Nair</p>
+              <div class="course-info-row">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 28 Hours</span>
+                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Beginner</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><strong>$29</strong> <span>$79</span></div>
+                <a href="#enroll-modal" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 2 -->
+          <article class="card course-card">
+            <div class="course-thumb">
+              <img src="assets/images/course-htmlcss.png" alt="HTML and CSS Web Development course banner" width="480" height="300">
+              <span class="level-badge level-beginner">Beginner</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta-top">
+                <span class="rating"><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9</span>
+                <span class="students"><i class="fa-solid fa-user-group" aria-hidden="true"></i> 3,120 Students</span>
+              </div>
+              <h3 class="course-title">HTML and CSS Web Development</h3>
+              <p class="course-instructor">By Rohan Kulkarni</p>
+              <div class="course-info-row">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 24 Hours</span>
+                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Beginner</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><strong>$24</strong> <span>$69</span></div>
+                <a href="#enroll-modal" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 3 -->
+          <article class="card course-card">
+            <div class="course-thumb">
+              <img src="assets/images/course-java.png" alt="Java Programming course banner" width="480" height="300">
+              <span class="level-badge level-intermediate">Intermediate</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta-top">
+                <span class="rating"><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8</span>
+                <span class="students"><i class="fa-solid fa-user-group" aria-hidden="true"></i> 1,890 Students</span>
+              </div>
+              <h3 class="course-title">Java Programming</h3>
+              <p class="course-instructor">By Vikram Nair</p>
+              <div class="course-info-row">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 36 Hours</span>
+                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Intermediate</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><strong>$34</strong> <span>$89</span></div>
+                <a href="#enroll-modal" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 4 -->
+          <article class="card course-card">
+            <div class="course-thumb">
+              <img src="assets/images/course-ai.png" alt="Artificial Intelligence course banner" width="480" height="300">
+              <span class="level-badge level-intermediate">Intermediate</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta-top">
+                <span class="rating"><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9</span>
+                <span class="students"><i class="fa-solid fa-user-group" aria-hidden="true"></i> 1,640 Students</span>
+              </div>
+              <h3 class="course-title">Artificial Intelligence</h3>
+              <p class="course-instructor">By Dr. Ananya Verma</p>
+              <div class="course-info-row">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 40 Hours</span>
+                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Intermediate</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><strong>$44</strong> <span>$99</span></div>
+                <a href="#enroll-modal" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 5 -->
+          <article class="card course-card">
+            <div class="course-thumb">
+              <img src="assets/images/course-datascience.png" alt="Data Science course banner" width="480" height="300">
+              <span class="level-badge level-intermediate">Intermediate</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta-top">
+                <span class="rating"><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8</span>
+                <span class="students"><i class="fa-solid fa-user-group" aria-hidden="true"></i> 1,920 Students</span>
+              </div>
+              <h3 class="course-title">Data Science</h3>
+              <p class="course-instructor">By Dr. Ananya Verma</p>
+              <div class="course-info-row">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 38 Hours</span>
+                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Intermediate</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><strong>$39</strong> <span>$95</span></div>
+                <a href="#enroll-modal" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 6 -->
+          <article class="card course-card">
+            <div class="course-thumb">
+              <img src="assets/images/course-ml.png" alt="Machine Learning course banner" width="480" height="300">
+              <span class="level-badge level-advanced">Advanced</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta-top">
+                <span class="rating"><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9</span>
+                <span class="students"><i class="fa-solid fa-user-group" aria-hidden="true"></i> 1,410 Students</span>
+              </div>
+              <h3 class="course-title">Machine Learning</h3>
+              <p class="course-instructor">By Dr. Ananya Verma</p>
+              <div class="course-info-row">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 Hours</span>
+                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Advanced</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><strong>$49</strong> <span>$119</span></div>
+                <a href="#enroll-modal" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 7 -->
+          <article class="card course-card">
+            <div class="course-thumb">
+              <img src="assets/images/course-uiux.png" alt="UI/UX Design course banner" width="480" height="300">
+              <span class="level-badge level-beginner">Beginner</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta-top">
+                <span class="rating"><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8</span>
+                <span class="students"><i class="fa-solid fa-user-group" aria-hidden="true"></i> 2,080 Students</span>
+              </div>
+              <h3 class="course-title">UI/UX Design</h3>
+              <p class="course-instructor">By Meera Kapoor</p>
+              <div class="course-info-row">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 22 Hours</span>
+                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> Beginner</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><strong>$29</strong> <span>$75</span></div>
+                <a href="#enroll-modal" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 8 -->
+          <article class="card course-card">
+            <div class="course-thumb">
+              <img src="assets/images/course-fullstack.png" alt="Full Stack Development course banner" width="480" height="300">
+              <span class="level-badge level-advanced">All Levels</span>
+            </div>
+            <div class="course-body">
+              <div class="course-meta-top">
+                <span class="rating"><i class="fa-solid fa-star" aria-hidden="true"></i> 5.0</span>
+                <span class="students"><i class="fa-solid fa-user-group" aria-hidden="true"></i> 2,790 Students</span>
+              </div>
+              <h3 class="course-title">Full Stack Development</h3>
+              <p class="course-instructor">By Rohan Kulkarni</p>
+              <div class="course-info-row">
+                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 54 Hours</span>
+                <span><i class="fa-solid fa-signal" aria-hidden="true"></i> All Levels</span>
+              </div>
+              <div class="course-footer">
+                <div class="course-price"><strong>$54</strong> <span>$129</span></div>
+                <a href="#enroll-modal" class="btn btn-primary btn-sm">Enroll Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. WHY CHOOSE US SECTION (6 Feature Cards)
+         ========================================================= -->
+    <section id="why-choose-us" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why Choose EduMaster</span>
+          <h2 class="section-title">Everything You Need to Master New Skills</h2>
+          <p class="section-subtitle">
+            Designed around flexibility, hands-on practice, and real student outcomes.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="card feature-card">
+            <div class="feature-icon icon-blue"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i></div>
+            <h3>Expert Instructors</h3>
+            <p>Learn directly from software engineers, data scientists, and university educators with real industry experience.</p>
+          </article>
+
+          <article class="card feature-card">
+            <div class="feature-icon icon-purple"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
+            <h3>Flexible Learning</h3>
+            <p>Watch crisp HD lessons at your own pace—whether between college lectures, late nights, or weekends.</p>
+          </article>
+
+          <article class="card feature-card">
+            <div class="feature-icon icon-indigo"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+            <h3>Practical Projects</h3>
+            <p>Every course includes guided real-world builds you can showcase directly in your resume and portfolio.</p>
+          </article>
+
+          <article class="card feature-card">
+            <div class="feature-icon icon-cyan"><i class="fa-solid fa-certificate" aria-hidden="true"></i></div>
+            <h3>Certificates</h3>
+            <p>Earn verified EduMaster completion certificates to highlight your technical skills to recruiters.</p>
+          </article>
+
+          <article class="card feature-card">
+            <div class="feature-icon icon-emerald"><i class="fa-solid fa-wallet" aria-hidden="true"></i></div>
+            <h3>Affordable Courses</h3>
+            <p>Student-friendly pricing with transparent single payments—no hidden fees or costly subscriptions.</p>
+          </article>
+
+          <article class="card feature-card">
+            <div class="feature-icon icon-amber"><i class="fa-solid fa-infinity" aria-hidden="true"></i></div>
+            <h3>Lifetime Access</h3>
+            <p>Revisit lessons, source files, and future curriculum updates whenever you need a quick refresher.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. INSTRUCTOR SECTION (4 Expert Profiles)
+         ========================================================= -->
+    <section id="instructors" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Meet Our Mentors</span>
+          <h2 class="section-title">Learn From Passionate Industry Experts</h2>
+          <p class="section-subtitle">
+            Dedicated instructors committed to breaking down complex concepts into clear, practical lessons.
+          </p>
+        </div>
+
+        <div class="instructors-grid">
+          <article class="card instructor-card">
+            <div class="instructor-photo">
+              <img src="assets/images/instructor-1.png" alt="Dr. Ananya Verma" width="300" height="300">
+            </div>
+            <div class="instructor-info">
+              <h3>Dr. Ananya Verma</h3>
+              <span class="expertise">AI &amp; Data Science Lead</span>
+              <span class="experience"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> 10+ Years Experience</span>
+              <p>Former ML research lead mentoring students in Python analytics, neural networks, and predictive modeling.</p>
+            </div>
+          </article>
+
+          <article class="card instructor-card">
+            <div class="instructor-photo">
+              <img src="assets/images/instructor-2.png" alt="Rohan Kulkarni" width="300" height="300">
+            </div>
+            <div class="instructor-info">
+              <h3>Rohan Kulkarni</h3>
+              <span class="expertise">Full Stack Web Architect</span>
+              <span class="experience"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> 8+ Years Experience</span>
+              <p>Senior frontend and full-stack engineer passionate about teaching clean HTML5, CSS3, and modern web apps.</p>
+            </div>
+          </article>
+
+          <article class="card instructor-card">
+            <div class="instructor-photo">
+              <img src="assets/images/instructor-3.png" alt="Vikram Nair" width="300" height="300">
+            </div>
+            <div class="instructor-info">
+              <h3>Vikram Nair</h3>
+              <span class="expertise">Java, Python &amp; Algorithms</span>
+              <span class="experience"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> 9+ Years Experience</span>
+              <p>Specializes in helping 1st-year engineering students master programming fundamentals and OOP concepts.</p>
+            </div>
+          </article>
+
+          <article class="card instructor-card">
+            <div class="instructor-photo">
+              <img src="assets/images/instructor-4.png" alt="Meera Kapoor" width="300" height="300">
+            </div>
+            <div class="instructor-info">
+              <h3>Meera Kapoor</h3>
+              <span class="expertise">Principal UI/UX Designer</span>
+              <span class="experience"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> 7+ Years Experience</span>
+              <p>Product designer teaching typography, color theory, wireframing, and user-centered design workflows.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. PLATFORM STATISTICS SECTION
+         ========================================================= -->
+    <section id="stats" class="stats-section" aria-label="Platform Statistics">
+      <div class="container stats-grid">
+        <div class="stat-box">
+          <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
+          <strong>10,000+</strong>
+          <span>Students</span>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+          <strong>100+</strong>
+          <span>Courses</span>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i>
+          <strong>50+</strong>
+          <span>Expert Instructors</span>
+        </div>
+        <div class="stat-box">
+          <i class="fa-solid fa-face-smile" aria-hidden="true"></i>
+          <strong>95%</strong>
+          <span>Student Satisfaction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. STUDENT TESTIMONIALS SECTION (4 Reviews)
+         ========================================================= -->
+    <section id="testimonials" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Student Stories</span>
+          <h2 class="section-title">What Our Learners Say About EduMaster</h2>
+          <p class="section-subtitle">
+            Real feedback from B.Tech students and beginners transforming their coding confidence.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="card testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="review-text">
+              &ldquo;As a 1st-year B.Tech student, the HTML and CSS course helped me build my very first responsive website from scratch in two weeks!&rdquo;
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/student-1.png" alt="Aarav Mehta" width="52" height="52">
+              <div>
+                <strong>Aarav Mehta</strong>
+                <span>HTML &amp; CSS Web Development</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="review-text">
+              &ldquo;Dr. Ananya explains Machine Learning math and intuition so clearly. The mini-projects made my college resume stand out.&rdquo;
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/student-2.png" alt="Priya Sharma" width="52" height="52">
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Machine Learning</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+            </div>
+            <p class="review-text">
+              &ldquo;The Python and Java exercises gave me huge confidence in my semester coding exams. Lifetime access is super helpful.&rdquo;
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/student-3.png" alt="Karthik Rao" width="52" height="52">
+              <div>
+                <strong>Karthik Rao</strong>
+                <span>Python Programming</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <p class="review-text">
+              &ldquo;Meera&apos;s UI/UX Design track taught me spacing, color contrast, and clean visual hierarchy. Every lesson feels practical.&rdquo;
+            </p>
+            <div class="reviewer">
+              <img src="assets/images/student-4.png" alt="Neha Joshi" width="52" height="52">
+              <div>
+                <strong>Neha Joshi</strong>
+                <span>UI/UX Design</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. ABOUT US SECTION
+         ========================================================= -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-visual">
+          <img
+            src="assets/images/about-learning.png"
+            alt="EduMaster mission, verified certificates, and mentor guidance overview"
+            class="about-image"
+            width="600"
+            height="425"
+          >
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">About EduMaster</span>
+          <h2 class="section-title">Empowering Students Through Affordable Education</h2>
+          <p>
+            EduMaster was created with one clear purpose: to bridge the gap between university classrooms
+            and real-world technology skills through structured, mentor-led online learning.
+          </p>
+
+          <div class="mission-vision-grid">
+            <div class="mv-card">
+              <div class="mv-head">
+                <img src="assets/icons/video-lesson.svg" alt="" width="34" height="34">
+                <h3>Our Mission</h3>
+              </div>
+              <p>
+                Deliver practical, project-driven courses at student-friendly prices so anyone with an
+                internet connection can build career-ready skills.
+              </p>
+            </div>
+
+            <div class="mv-card">
+              <div class="mv-head">
+                <img src="assets/icons/verified-badge.svg" alt="" width="34" height="34">
+                <h3>Our Vision</h3>
+              </div>
+              <p>
+                Become the most trusted global learning companion for beginners, college undergraduates,
+                and lifelong tech creators.
+              </p>
+            </div>
+          </div>
+
+          <a href="#courses" class="btn btn-primary">Browse All Courses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         10. NEWSLETTER SECTION
+         ========================================================= -->
+    <section id="newsletter" class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <div class="newsletter-copy">
+            <span class="newsletter-pill">Weekly Study Digest</span>
+            <h2>Stay Updated With New Courses &amp; Free Guides</h2>
+            <p>Join 10,000+ students receiving curated coding roadmaps, study tips, and early course discounts.</p>
+          </div>
+
+          <form class="newsletter-form" action="#newsletter" method="get">
+            <label for="newsletter-email" class="sr-only">Email Address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Enter your email address..."
+              required
+            >
+            <button type="submit" class="btn btn-dark">Subscribe Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         11. CONTACT SECTION
+         ========================================================= -->
+    <section id="contact" class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contact Us</span>
+          <h2 class="section-title">Have Questions? We&apos;d Love to Help</h2>
+          <p class="section-subtitle">
+            Reach out for course guidance, college group discounts, or instructor inquiries.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <aside class="card contact-info">
+            <h3>Get in Touch</h3>
+            <p>Our student support team responds within 24 hours on weekdays and weekends.</p>
+
+            <div class="contact-items">
+              <a href="mailto:support@edumaster.edu" class="contact-item">
+                <span class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                <div>
+                  <small>Email Support</small>
+                  <strong>support@edumaster.edu</strong>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <span class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                <div>
+                  <small>Student Helpline</small>
+                  <strong>+91 98765 43210</strong>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                <div>
+                  <small>Learning Hub</small>
+                  <strong>Pune &amp; Bengaluru, India</strong>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <div class="card contact-form-card">
+            <form class="contact-form" action="mailto:support@edumaster.edu" method="post" enctype="text/plain">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name</label>
+                  <input type="text" id="contact-name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Course recommendation / Enrollment help" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       12. FOOTER SECTION
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand footer-logo">
+            <img src="assets/icons/edumaster-logo.svg" alt="EduMaster Logo" class="brand-icon" width="38" height="38">
+            <span class="brand-name">Edu<span>Master</span></span>
+          </a>
+          <p>
+            A modern online learning platform built to help students master programming, design,
+            AI, and career skills with confidence.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#instructors">Instructors</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Course Categories</h4>
+          <ul>
+            <li><a href="#categories">Programming</a></li>
+            <li><a href="#categories">Web Development</a></li>
+            <li><a href="#categories">Artificial Intelligence</a></li>
+            <li><a href="#categories">Data Science</a></li>
+            <li><a href="#categories">UI/UX &amp; Graphic Design</a></li>
+            <li><a href="#categories">Cyber Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:support@edumaster.edu">support@edumaster.edu</a></li>
+            <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <span>+91 98765 43210</span></li>
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <span>Pune &amp; Bengaluru, India</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 EduMaster Online Learning Platform. All Rights Reserved.</p>
+        <a href="#home" class="back-top-link">Back to Top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       PURE-CSS INTERACTIVE MODALS (:target)
+       Login, Get Started, and Course Enrollment without JS
+       ========================================================= -->
+  <div id="login-modal" class="css-modal" role="dialog" aria-labelledby="login-title">
+    <a href="#home" class="modal-backdrop" aria-label="Close modal"></a>
+    <div class="modal-card">
+      <a href="#home" class="modal-close" aria-label="Close Login Modal">&times;</a>
+      <h3 id="login-title">Welcome Back to EduMaster</h3>
+      <p>Sign in to continue watching your enrolled courses and track progress.</p>
+      <form class="modal-form" action="#home" method="get">
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" placeholder="student@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="login-pass">Password</label>
+          <input type="password" id="login-pass" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Login to Account</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="signup-modal" class="css-modal" role="dialog" aria-labelledby="signup-title">
+    <a href="#home" class="modal-backdrop" aria-label="Close modal"></a>
+    <div class="modal-card">
+      <a href="#home" class="modal-close" aria-label="Close Sign Up Modal">&times;</a>
+      <h3 id="signup-title">Create Your Free Student Account</h3>
+      <p>Start learning today with access to 100+ expert-led courses and project tracks.</p>
+      <form class="modal-form" action="#courses" method="get">
+        <div class="form-group">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email Address</label>
+          <input type="email" id="signup-email" placeholder="student@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-pass">Create Password</label>
+          <input type="password" id="signup-pass" placeholder="Minimum 8 characters" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Get Started Free</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="enroll-modal" class="css-modal" role="dialog" aria-labelledby="enroll-title">
+    <a href="#courses" class="modal-backdrop" aria-label="Close modal"></a>
+    <div class="modal-card">
+      <a href="#courses" class="modal-close" aria-label="Close Enrollment Modal">&times;</a>
+      <h3 id="enroll-title">Quick Course Enrollment</h3>
+      <p>Confirm your details to unlock lifetime course access, downloadable notes, and certificate eligibility.</p>
+      <form class="modal-form" action="#courses" method="get">
+        <div class="form-group">
+          <label for="enroll-name">Student Name</label>
+          <input type="text" id="enroll-name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="enroll-email">Email for Certificate</label>
+          <input type="email" id="enroll-email" placeholder="student@example.com" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Confirm Enrollment</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
